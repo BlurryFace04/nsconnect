@@ -372,7 +372,7 @@ export default function CommunityChat() {
             </div>
           )}
 
-          {/* {messages.map((message) => (
+          {messages.map((message) => (
             <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
               <div
                 className={`max-w-[80%] rounded-lg px-6 py-4 ${
@@ -384,7 +384,7 @@ export default function CommunityChat() {
                 <p className="text-body whitespace-pre-wrap">{message.content}</p>
               </div>
             </div>
-          ))} */}
+          ))}
 
           {isLoading && (
             <div className="flex justify-start">
