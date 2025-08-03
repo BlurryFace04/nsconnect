@@ -323,7 +323,7 @@ export default function CommunityChat() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <div className="w-2 h-2 bg-black dark:bg-white rounded-full animate-pulse"></div>
-              <CardTitle className="text-2xl text-heading text-card-foreground">Network School</CardTitle>
+              <CardTitle className="text-2xl text-heading text-card-foreground">Network School Connect</CardTitle>
             </div>
             <div className="flex items-center gap-3">
               <Badge variant="secondary" className="bg-secondary text-secondary-foreground font-medium">
@@ -400,10 +400,13 @@ export default function CommunityChat() {
           {/* Member Recommendations */}
           {(recommendedMembers.length > 0 || isLoadingMembers) && (
             <div className="mt-8 p-6 bg-muted rounded-lg border-border">
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-4">
                 <Users className="h-6 w-6 text-card-foreground" />
                 <h3 className="text-heading text-xl text-card-foreground">Recommended Connections</h3>
               </div>
+              <p className="text-body text-muted-foreground mb-6 leading-relaxed">
+                Based on your conversation, here are some community members who might be able to help or collaborate with you on your goals.
+              </p>
 
               {isLoadingMembers ? (
                 <div className="flex gap-6 overflow-x-auto pb-2">
