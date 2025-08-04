@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server"
 
 // External API configuration
-const EXTERNAL_API_BASE_URL = "https://0cb8abb68973.ngrok-free.app"
+const EXTERNAL_API_BASE_URL = "https://9a9322691f82.ngrok-free.app"
 
 // Transform external API profile to our Member format
 function transformProfileToMember(profile: any, index: number) {
